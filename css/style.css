@@ -6,3 +6,16 @@ h1 {
     vertical-align: middle;
     margin: 0;
 }
+
+li {
+    list-style: none;
+}
+
+li > span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.deleted {
+    text-decoration: line-through;
+}
