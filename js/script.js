@@ -6,27 +6,27 @@ createApp({
             todoList: [
 
                 {
-                    text: `cose da fare`,
+                    text: `Cose da fare`,
                     done: false
                 },
                 {
-                    text: `cose da dire`,
+                    text: `Cose da dire`,
                     done: true
                 },
                 {
-                    text: `cose da pensare`,
+                    text: `Cose da pensare`,
                     done: false
                 },
                 {
-                    text: `cose da guardare`,
+                    text: `Cose da guardare`,
                     done: true
                 },
                 {
-                    text: `cose da comprare`,
+                    text: `Cose da comprare`,
                     done: false
                 },
                 {
-                    text: `cose da regalare`,
+                    text: `Cose da regalare`,
                     done: false
                 },
             ]
