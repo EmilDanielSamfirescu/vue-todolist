@@ -1,12 +1,8 @@
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
+const {createApp} = Vue;
+createApp({
+    data(){
+        return {
+
+        }
+    }
+}).mount(`#app`)
