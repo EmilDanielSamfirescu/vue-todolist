@@ -30,7 +30,9 @@
 <main id="app">
     <div class="d-flex justify-content-center">
         <form @submit.prevent="addNewTask()">
-            <input type="text" placeholder="Inserisci un nuovo Task" v-model="newTask" required>
+            <input type="text" placeholder="Inserisci un nuovo Task" v-model="newTask"
+            @keyup.enter="addNewTask()"
+            required>
             <button>
                 Aggiungi
             </button>
