@@ -23,7 +23,7 @@
 </head>
 <body>
 <header class="d-flex justify-content-center my-4">
-    <img src="img/Logo.png" alt=""logo>
+    <img src="img/Logo.png" alt="Logo"logo>
     <h1><strong>ToDoList</strong></h1>
 </header>
 
@@ -44,7 +44,7 @@
             :class="(singleTask.done == true) ? `deleted` : ``" 
             class="d-flex justify-content-between">
 
-                <div class="text-list">
+                <div class="text-list" @click="changeDone(index)">
                     {{singleTask.text}}
                 </div>
 
@@ -58,7 +58,7 @@
         </ul>
 
         <div v-else>
-            Non ci suono Task! Sei libero Zio😎
+            Non ci sono Task! Sei libero Zio😎
         </div>
 
     </div>

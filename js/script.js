@@ -3,6 +3,7 @@ createApp({
     data(){
         return {
             newTask: ``,
+            count: 0,
             todoList: [
 
                 {
@@ -44,16 +45,14 @@ createApp({
         },
         removeTask(i) {
             this.todoList.splice(i, 1);
-
-            if(this.todoList.length > 0) {
-                this.newTask.push({
-                    text: `non ci sono task`
-                });
-            }
         },
-        invertDone (){
-            // console.log("bella!")
-            
+        changeDone (i){
+            if(this.todoList[i].done == true){
+                this.todoList[i].done = false;
+            } else {
+                this.todoList[i].done = true;
+            }
+            console.log(this.todoList[i].done)
         }
     }
 }).mount(`#app`)
