@@ -28,16 +28,21 @@
 </header>
 
 <main id="app">
+    
     <div class="d-flex justify-content-center">
         <form @submit.prevent="addNewTask()">
+
             <input type="text" placeholder="Inserisci un nuovo Task" v-model="newTask"
             @keyup.enter="addNewTask()"
             required>
+
             <button>
                 Aggiungi
             </button>
+            
         </form>
     </div>
+
     <div class="task-container mt-5">
 
         <ul v-if="todoList.length > 0">
@@ -59,7 +64,7 @@
 
         </ul>
 
-        <div v-else>
+        <div class="text-list" v-else>
             Non ci sono Task! Sei libero Zio😎
         </div>
 

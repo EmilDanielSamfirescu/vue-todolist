@@ -52,7 +52,7 @@ createApp({
             } else {
                 this.todoList[i].done = true;
             }
-            console.log(this.todoList[i].done)
+            console.log(this.todoList[i].done);
         }
     }
 }).mount(`#app`)
